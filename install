@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-cd $HOME/GIRO
+cd $HOME/giro
 install() {
 rm -rf $HOME/.telegram-cli
 sudo apt-get update -y
@@ -19,8 +19,8 @@ sudo apt-get install libstdc++6 -y
 sudo apt-get install lua-lgi -y
 sudo apt-get install libnotify-dev -y
 sudo chmod +x tg
-lua GIRO.lua
-sudo chmod +x GIRO
+lua giro.lua
+sudo chmod +x giro
 sudo chmod +x ./NG
 ./NG
 }
@@ -32,8 +32,8 @@ echo "Tg Is Not Found"
 exit 1
 fi
 sudo chmod +x tg
-lua GIRO.lua
-sudo chmod +x GIRO
+lua giro.lua
+sudo chmod +x giro
 sudo chmod +x ./NG
 ./NG
 fi
